@@ -1,4 +1,4 @@
-def send_email(message, recipient, sender="university.help@gmail.com"):
+def send_email(message, recipient, *, sender="university.help@gmail.com"):
     not_right_email = f'Невозможно отправить письмо с адреса {sender} на адрес {recipient}'
     if "@" not in recipient or "@" not in sender:
         print(not_right_email)
